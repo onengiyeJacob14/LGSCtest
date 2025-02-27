@@ -1206,3 +1206,83 @@ body {
 .social-icons a:hover {
   color: var(--color7);
 }
+
+/* Slow down scroll speed */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+/* Add fade-in transition for page load */
+body {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+/* Ensure footer text is white */
+.site-footer {
+  color: white !important;
+}
+
+/* Metallic Header and Footer Effect */
+.site-header, .site-footer {
+  background: linear-gradient(90deg, #2e0b40 0%, #9030a0 100%);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Our Community Page Background */
+.community-section {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Ensure header visibility in Our Community page */
+.site-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Improve visibility of "See Care in Action" */
+.community-button {
+  color: white !important;
+  background-color: #f1562c;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.community-button:hover {
+  background-color: #d94d28;
+}
+
+/* Smooth Section Transition Effects */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure footer sticks to the bottom */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer {
+  margin-top: auto;
+}
