@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - Living Glory Social Care</title>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome for icons -->
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
+  <!-- Additional styling for the contact form -->
+  <style>
+    .contact-section {
+      padding: 4rem 1rem;
+      background-color: #fff;
+      text-align: center;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .contact-container h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #310055;
+    }
+    form .form-group {
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    form .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    form .form-group input,
+    form .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .send-button {
+      background-color: var(--orange-main);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .send-button i {
+      margin-right: 0.5rem;
+    }
+    .send-button:hover {
+      background-color: var(--orange-hover);
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER (reusing header from the main site) -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img 
+          src="https://i.ibb.co/QjTnw9P9/livingglory-logo-c.png" 
+          alt="Living Glory Social Care Logo"
+        />
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#join">Join Us</a></li>
+        <li><a href="index.html#community">Our Community</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT FORM SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <!-- The form uses a temporary placeholder email -->
+      <form action="mailto:placeholder@example.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Number (Optional)</label>
+          <input type="tel" id="contact" name="contact" />
+        </div>
+        <div class="form-group">
+          <label for="purpose">Purpose of Contact</label>
+          <input type="text" id="purpose" name="purpose" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="send-button">
+          <i class="fas fa-paper-plane"></i> Send
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER (reusing footer from the main site) -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <h2>Give Your Loved Ones Quality Care You Can Trust</h2>
+      </div>
+      <div class="footer-top-right">
+        <a href="contact.html" class="footer-contact-btn">Contact Us Now</a>
+      </div>
+    </div>
+    <div class="footer-middle">
+      <div class="footer-logo">
+        <img 
+          src="https://via.placeholder.com/120x120?text=LGSC+Logo" 
+          alt="Living Glory Social Care Logo"
+        />
+      </div>
+      <div class="footer-association">
+        <img 
+          src="https://via.placeholder.com/200x100?text=Homecare+Association" 
+          alt="Homecare Association Logo"
+        />
+      </div>
+    </div>
+    <div class="footer-links-row">
+      <div class="footer-column">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#join">Become a Care Assistant</a></li>
+          <li><a href="index.html#news">Latest Jobs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Policy</h3>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#cookie">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Get In Touch</h3>
+        <p>
+          St George’s Hub Great Hampton Row<br />
+          B19 3JG<br />
+          +44 789 6228 886<br />
+          livingglorycare@gmail.com
+        </p>
+        <p><strong>Social Media:</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©Copyright 2022 Living Glory Social Care | All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
