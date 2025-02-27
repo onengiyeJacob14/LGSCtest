@@ -1258,15 +1258,6 @@ html {
   scroll-padding-top: 60px;
 }
 
-/* Add fade-in transition for page load */
-body {
-  opacity: 1;
-  transition: opacity 0.8s ease-in;
-}
-
-body.loaded {
-  opacity: 1;
-}
 
 /* Ensure footer text is white */
 .site-footer {
