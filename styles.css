@@ -880,7 +880,6 @@ body {
 .footer-association img {
   max-width: auto;
   height: 75px;
-}
 
 /* 3. BOTTOM LINKS & INFO */
 .footer-links-row {
@@ -1216,7 +1215,7 @@ html {
 /* Add fade-in transition for page load */
 body {
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in;
 }
 
 body.loaded {
