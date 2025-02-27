@@ -57,9 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Additional JS can go here if needed
 });
 
-// Apply fade-in effect on page load
-document.addEventListener("DOMContentLoaded", function () {
-  document.body.classList.add("loaded");
 
   // Add smooth transition effects on scrolling
   const sections = document.querySelectorAll("section");
