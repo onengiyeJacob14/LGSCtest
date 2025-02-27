@@ -1,242 +1,419 @@
-/***************************************************
-  1. COLOR VARIABLES & GRADIENTS
-****************************************************/
-:root {
-  --purple-gradient: linear-gradient(90deg, #1f0b2a 0%, #6d2165 100%);
-  --header-bg: var(--purple-gradient);
-  --footer-bg: var(--purple-gradient);
-  --header-text: #ffffff;
-  --footer-text: #ffffff;
-  --footer-link-hover: #fbc8d9;
-  --color1: #310055;
-  --color2: #3c0663;
-  --color3: #4a0a77;
-  --color4: #5a108f;
-  --color5: #6818a5;
-  --color6: #8b2fc9;
-  --color7: #ab51e3;
-  --color8: #bd68ee;
-  --color9: #d283ff;
-  --color10: #dc97ff;
-  --hero-overlay-color: rgba(49, 0, 85, 0.6);
-  --button-bg: var(--color5);
-  --button-text: #ffffff;
-  --main-font: 'Arial', sans-serif;
-  --orange-main: #f1562c;
-  --orange-hover: #d94d28;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Living Glory Social Care</title>
 
-/***************************************************
-  2. GLOBAL STYLES
-****************************************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <!-- Font Awesome (optional) -->
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 
-body {
-  font-family: var(--main-font);
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.5;
-}
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-/***************************************************
-  3. HEADER SECTION
-****************************************************/
-.site-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: var(--header-bg);
-  color: var(--header-text);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  height: 50px;
-  z-index: 999;
-}
+  <!-- HEADER SECTION -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="#home">
+        <img 
+          src="https://i.ibb.co/QjTnw9P9/livingglory-logo-c.png" 
+          alt="Living Glory Social Care Logo"
+        />
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li> <!-- Updated Link -->
+        <li><a href="#services">Services</a></li>
+        <li><a href="#join">Join Us</a></li>
+         <li><a href="our-community.html">Our Community</a></li> <!-- Updated Link --></li>
+         <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-.logo img {
-  height: 75px;
-  width: auto;
-}
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>
+        Making <span class="highlight">every</span> moment matter
+      </h1>
+      <p>
+        Every hour, we bring exceptional care to people who need it most.
+        Through millions of moments of care annually, we’re transforming lives
+        of 1000s daily: in care homes, hospitals and communities across the UK.
+      </p>
+    </div>
+  </section>
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="about-card">
+      <!-- Left Column: Text -->
+      <div class="text-column">
+        <span class="subtitle">Care providers</span>
+        <h2 class="about-heading">
+          Quality, trusted, compliant.<br />
+          Care you can trust.
+        </h2>
+        <p class="about-paragraph">
+          Behind every care moment is our promise of excellence. Our clinical team – the largest in the sector – ensures 
+          you’re matched with healthcare professionals who don’t just meet standards, they set them. When you need 
+          support, night or day, we’re here with people who care.
+        </p>
+        <a href="about-us.html" class="about-button">Find Out More</a>
 
-.nav-list li a {
-  color: var(--header-text);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+      </div>
 
-.nav-list li a:hover {
-  color: var(--color7);
-}
+      <!-- Right Column: Image -->
+      <div class="image-column">
+        <img 
+          src="https://i.ibb.co/svr6WPh6/openart-image-HRctx-XX9-1739834531677-raw.jpg"
+          alt="Caregiver assisting an elderly patient"
+          class="about-image"
+        />
+      </div>
+    </div>
+  </section>
 
-/***************************************************
-  FOOTER SECTION (Corrected Colors)
-****************************************************/
-.site-footer {
-  background: var(--footer-bg);
-  color: var(--footer-text);
-  padding: 2rem 1rem;
-  font-family: var(--main-font);
-}
+  <!-- SERVICES SECTION -->
+  <section class="services-section" id="services">
+    <div class="services-container">
+      <!-- Main Heading & Subheading -->
+      <h2 class="services-title">Total workforce solutions and services</h2>
+      <p class="services-subtitle">
+        With our workforce solutions easily fill your shifts, control total workforce spend,
+        maintain consistent training standards and get actionable operational insights – 
+        improving the lives of those who need care.
+      </p>
 
-/* Footer Titles and Links */
-.site-footer h3, 
-.site-footer p, 
-.site-footer a, 
-.site-footer li {
-  color: #ffffff !important; /* Force white text */
-}
+      <!-- Three Cards -->
+      <div class="service-cards">
+        <!-- Card 1 -->
+        <div class="service-card card-1">
+          <h3 class="service-card-title">HealthForce Connect</h3>
+          <p class="service-card-subtitle">Your care partner</p>
+          <p class="service-card-desc">
+            Finding the right care is about more than just a schedule. The truth is, 
+            our priorities and values lie in a personalised approach that 
+            shares your passion for exceptional care.
+          </p>
+          <a href="#" class="service-card-link">Find out more</a>
+        </div>
 
-/* Footer Links */
-.site-footer a {
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+        <!-- Card 2 -->
+        <div class="service-card card-2">
+          <h3 class="service-card-title">Care as individual as you</h3>
+          <p class="service-card-subtitle">Tailored solutions</p>
+          <p class="service-card-desc">
+            Taking time to understand your needs, budgets and outcomes helps us tailor 
+            the right support to change lives. We believe in stepping alongside you 
+            to deliver care that changes lives.
+          </p>
+          <a href="#" class="service-card-link">Find out more</a>
+        </div>
 
-.site-footer a:hover {
-  color: var(--footer-link-hover);
-}
+        <!-- Card 3 -->
+        <div class="service-card card-3">
+          <h3 class="service-card-title">Growing together in care freely</h3>
+          <p class="service-card-subtitle">Empowering you</p>
+          <p class="service-card-desc">
+            • FREE Access to lifetime learning opportunities (100+ modules)<br />
+            • Build shift choices around your needs<br />
+            • An open door to new opportunities in real care
+          </p>
+          <a href="#" class="service-card-link">Find out more</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-/* Footer Top Section */
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
+  <!-- JOIN US SECTION -->
+  <section class="join-section" id="join">
+    <div class="join-container">
+      <!-- Left Column: Text -->
+      <div class="join-text">
+        <span class="join-subtitle">Carers and nurses</span>
+        <h2 class="join-title">
+          Your life, your career. <br />
+          You're in control.
+        </h2>
+        <p class="join-desc">
+          Take control of where, when, and how frequently you work. <br />
+          Get a detailed overview of the care setting with our easy-to-use 
+          HealthForceGo app.
+        </p>
+        <a href="#" class="join-button">Find out more</a>
+      </div>
 
-.footer-top-left h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
-}
+      <!-- Right Column: Image -->
+      <div class="join-image-box">
+        <img 
+          src="https://i.ibb.co/MyLqR30V/openart-image-NDr-W7-Fsx-1739842330881-raw.jpg"
+          alt="Nurses looking at phones" 
+          class="join-image"
+        />
+      </div>
+    </div>
+  </section>
 
-.footer-top-right {
-  margin-top: 1rem;
-}
+  <!-- OUR COMMUNITY SECTION -->
+  <section class="community-section" id="community">
+    <div class="community-container">
 
-.footer-contact-btn {
-  display: inline-block;
-  background-color: var(--footer-text);
-  color: #310055;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
+      <!-- Section Title -->
+      <h2 class="community-title">Our moments in care</h2>
 
-.footer-contact-btn:hover {
-  background-color: var(--footer-link-hover);
-}
+      <!-- Cards Wrapper -->
+      <div class="community-cards">
 
-/* Footer Middle Section */
-.footer-middle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+        <!-- Card 1 -->
+        <div class="community-card">
+          <div class="community-image-box">
+            <img 
+              src="https://via.placeholder.com/300x400?text=Community+1" 
+              alt="Community moment 1" 
+              class="community-image"
+            />
+          </div>
+          <div class="community-text">
+            <h3>Memorable Day Out</h3>
+            <p>
+              A wonderful moment at the seaside with our community members.
+            </p>
+            <a href="#" class="community-link">See more</a>
+          </div>
+        </div>
 
-.footer-logo img,
-.footer-association img {
-  max-width: auto;
-  height: 75px;
-}
+        <!-- Card 2 -->
+        <div class="community-card">
+          <div class="community-image-box">
+            <img 
+              src="https://via.placeholder.com/300x400?text=Community+2" 
+              alt="Community moment 2" 
+              class="community-image"
+            />
+          </div>
+          <div class="community-text">
+            <h3>Mike’s Newcross Story</h3>
+            <p>
+              Discover how Mike found a new perspective through our care support.
+            </p>
+            <a href="#" class="community-link">See more</a>
+          </div>
+        </div>
 
-/* Footer Columns */
-.footer-links-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
+        <!-- Card 3 -->
+        <div class="community-card">
+          <div class="community-image-box">
+            <img 
+              src="https://via.placeholder.com/300x400?text=Community+3" 
+              alt="Community moment 3" 
+              class="community-image"
+            />
+          </div>
+          <div class="community-text">
+            <h3>Sharing a Laugh</h3>
+            <p>
+              Laughter is the best medicine—enjoying a fun moment together.
+            </p>
+            <a href="#" class="community-link">See more</a>
+          </div>
+        </div>
 
-.footer-column {
-  flex: 1 1 200px;
-  min-width: 180px;
-}
+        <!-- Card 4 -->
+        <div class="community-card">
+          <div class="community-image-box">
+            <img 
+              src="https://via.placeholder.com/300x400?text=Community+4" 
+              alt="Community moment 4" 
+              class="community-image"
+            />
+          </div>
+          <div class="community-text">
+            <h3>Artful Expressions</h3>
+            <p>
+              Exploring creativity and color in our inclusive community space.
+            </p>
+            <a href="#" class="community-link">See more</a>
+          </div>
+        </div>
 
-.footer-column h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
+      </div> <!-- end .community-cards -->
 
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+      <!-- CTA Button at bottom -->
+      <a href="our-community.html" class="community-button">See Care in Action</a>
 
-.footer-column li {
-  margin-bottom: 0.5rem;
-}
+    </div>
+  </section>
 
-.footer-column a {
-  color: var(--footer-text);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+  <!-- PODCAST SERIES SECTION -->
+  <section class="podcast-section" id="podcast">
+    <div class="podcast-container">
 
-.footer-column a:hover {
-  color: var(--footer-link-hover);
-}
+      <!-- Subheading & Title -->
+      <span class="podcast-subtitle">Our podcast series</span>
+      <h2 class="podcast-title">Voices of Care</h2>
 
-.footer-column p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+      <!-- Podcast Cards Wrapper -->
+      <div class="podcast-cards">
 
-/* Footer Icons */
-.footer-column i {
-  color: var(--orange-main);
-  font-size: 18px;
-}
+        <!-- Card 1 -->
+        <div class="podcast-card">
+          <img 
+            src="https://via.placeholder.com/150?text=Louise+Stead" 
+            alt="Louise Stead" 
+            class="podcast-speaker-image"
+          />
+          <blockquote class="podcast-quote">
+            “They see themselves as being the NHS.”
+          </blockquote>
+          <p class="podcast-speaker">Louise Stead</p>
+          <button class="podcast-button">Listen to podcast</button>
+        </div>
 
-/* Footer Bottom */
-.footer-bottom {
-  text-align: center;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
+        <!-- Card 2 -->
+        <div class="podcast-card">
+          <img 
+            src="https://via.placeholder.com/150?text=Skills+for+Care" 
+            alt="Skills for Care" 
+            class="podcast-speaker-image"
+          />
+          <blockquote class="podcast-quote">
+            "It's completely overwhelming!"
+          </blockquote>
+          <p class="podcast-speaker">Skills for Care</p>
+          <button class="podcast-button">Listen to podcast</button>
+        </div>
 
-.footer-bottom p {
-  font-size: 0.9rem;
-  margin: 0;
-}
+        <!-- Card 3 -->
+        <div class="podcast-card">
+          <img 
+            src="https://via.placeholder.com/150?text=Jenni+Douglas-Todd" 
+            alt="Jenni Douglas-Todd" 
+            class="podcast-speaker-image"
+          />
+          <blockquote class="podcast-quote">
+            "The NHS is the most diverse employer in Europe."
+          </blockquote>
+          <p class="podcast-speaker">Jenni Douglas-Todd</p>
+          <button class="podcast-button">Listen to podcast</button>
+        </div>
 
-/***************************************************
-  RESPONSIVE FOOTER
-****************************************************/
-@media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+      </div> <!-- end .podcast-cards -->
 
-  .footer-top-right {
-    margin-top: 1rem;
-  }
+      <!-- Carousel Dots -->
+      <div class="podcast-carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
 
-  .footer-links-row {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
+      <!-- Bottom CTA Button -->
+      <a href="#" class="podcast-cta-button">Click here to listen now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <h2>Give Your Loved Ones Quality Care You Can Trust</h2>
+      </div>
+      <div class="footer-top-right">
+        <a href="#contact" class="footer-contact-btn">Contact Us Now</a>
+      </div>
+    </div>
+
+    <!-- Middle Row with Logos -->
+    <div class="footer-middle">
+      <div class="footer-logo">
+        <!-- LGSC Logo -->
+        <img 
+    src="https://i.ibb.co/QjTnw9P9/livingglory-logo-c.png"
+          alt="Living Glory Social Care Logo"
+        />
+      </div>
+      <div class="footer-association">
+        <!-- Homecare Association Logo -->
+        <img 
+          src="https://i.ibb.co/YBT0yqzM/homecare.png" 
+  alt="Homecare Association Logo"
+        />
+      </div>
+    </div>
+
+    <!-- Bottom Links and Info -->
+    <div class="footer-links-row">
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#join">Become a Care Assistant</a></li>
+          <li><a href="#news">Latest Jobs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+     <!-- Policy Links -->
+<div class="footer-column">
+  <h3>Policy</h3>
+  <ul>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="cookie-policy.html">Cookie Policy</a></li>
+    <li><a href="policies-compliance.html">Our Policies & Compliance</a></li>
+  </ul>
+</div>
+
+
+  <!-- Get In Touch -->
+<div class="footer-column">
+  <h3>Get In Touch</h3>
+  <p>
+    <i class="fas fa-map-marker-alt"></i>
+    <a href="https://www.google.com/maps/search/?api=1&query=St+George’s+Hub+Great+Hampton+Row,+B19+3JG" 
+       target="_blank" rel="noopener noreferrer">
+      St George’s Hub Great Hampton Row, B19 3JG
+    </a>
+  </p>
+  <p>
+    <i class="fas fa-phone"></i>
+    <a href="tel:+447896228886">+44 789 6228 886</a>
+  </p>
+  <p>
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:livingglorycare@gmail.com">livingglorycare@gmail.com</a>
+  </p>
+</div>
+
+        <p><strong>Social Media:</strong></p>
+        <!-- Social icons or links can go here -->
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>©Copyright 2022 Living Glory Social Care | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  
+<!-- COOKIE CONSENT POPUP -->
+<div id="cookie-popup" class="cookie-container">
+  <p>This website uses cookies to enhance user experience. By clicking "Accept", you consent to the use of cookies.</p>
+  <button id="accept-cookies" class="cookie-btn">Accept</button>
+  <button id="decline-cookies" class="cookie-btn decline">Decline</button>
+</div>
+
+  <!-- Link to external JS (optional) -->
+  <script src="script.js"></script>
+</body>
+</html>
