@@ -39,21 +39,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if cookies have already been accepted or declined
     if (localStorage.getItem("cookieConsent") === "accepted" || localStorage.getItem("cookieConsent") === "declined") {
-        cookiePopup.classList.add("hidden");
+        cookiePopup.style.display = "none"; // Hide the pop-up if consent was already given
+    } else {
+        cookiePopup.style.display = "block"; // Show the pop-up only if no choice was made
     }
 
     // Accept Cookies
     acceptCookies.addEventListener("click", function () {
         localStorage.setItem("cookieConsent", "accepted");
-        cookiePopup.classList.add("hidden");
+        cookiePopup.style.display = "none"; // Hide the pop-up immediately
     });
 
     // Decline Cookies
     declineCookies.addEventListener("click", function () {
         localStorage.setItem("cookieConsent", "declined");
-        cookiePopup.classList.add("hidden");
+        cookiePopup.style.display = "none"; // Hide the pop-up immediately
     });
 });
+
 
 
 
