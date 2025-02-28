@@ -1076,14 +1076,13 @@ body {
 }
 
 
-/***************************************************
-  OUR COMMUNITY SECTION - Updated Background
-****************************************************/
+/* Community Page Styles */
 .community-section {
-  background-color: #ffffff; /* Changed to white */
   padding: 4rem 1rem;
-  color: #333; /* Dark text for contrast */
+  background-color: var(--color5); /* Dark Purple Background */
   text-align: center;
+  color: var(--header-text); /* White Text */
+}
 
 .community-section h1 {
   font-size: 2.5rem;
@@ -1152,7 +1151,7 @@ body {
 /* Our People Section */
 .our-people {
   padding: 4rem 1rem;
-  background-color: #ffffff; /* Matching Theme */
+  background-color: var(--color2); /* Matching Theme */
   text-align: center;
   color: var(--header-text);
 }
