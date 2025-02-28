@@ -31,28 +31,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Ensure cookie pop-up is handled correctly
 document.addEventListener("DOMContentLoaded", function () {
-  const cookiePopup = document.getElementById("cookie-popup");
-  const acceptCookies = document.getElementById("accept-cookies");
-  const declineCookies = document.getElementById("decline-cookies");
+    const cookiePopup = document.getElementById("cookie-popup");
+    const acceptCookies = document.getElementById("accept-cookies");
+    const declineCookies = document.getElementById("decline-cookies");
 
-  // Check if cookies have already been accepted or declined
-  if (!localStorage.getItem("cookieConsent")) {
-    cookiePopup.classList.remove("hidden");
-  }
+    // Check if cookies have already been accepted or declined
+    if (localStorage.getItem("cookieConsent") === "accepted" || localStorage.getItem("cookieConsent") === "declined") {
+        cookiePopup.classList.add("hidden");
+    }
 
-  // Accept Cookies
-  acceptCookies.addEventListener("click", function () {
-    localStorage.setItem("cookieConsent", "accepted");
-    cookiePopup.classList.add("hidden");
-  });
+    // Accept Cookies
+    acceptCookies.addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "accepted");
+        cookiePopup.classList.add("hidden");
+    });
 
-  // Decline Cookies
-  declineCookies.addEventListener("click", function () {
-    localStorage.setItem("cookieConsent", "declined");
-    cookiePopup.classList.add("hidden");
-  });
+    // Decline Cookies
+    declineCookies.addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "declined");
+        cookiePopup.classList.add("hidden");
+    });
 });
+
 
 
   // Slow down scrolling speed
