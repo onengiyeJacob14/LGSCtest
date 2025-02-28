@@ -1210,18 +1210,18 @@ body {
 
 
 /* Ensure smooth scrolling */
-html {
+/*html {
     scroll-behavior: smooth;
-}
+}*/
 
 /* Section animations - Fade-in and Slide-in */
-section {
+/* section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
+} */
 
-section.visible {
+/* section.visible {
     opacity: 1;
     transform: translateY(0);
-}
+} */
