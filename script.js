@@ -69,21 +69,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Scroll animations: Fade-in and Slide-in Effects
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
-
-    const revealSection = () => {
-        sections.forEach((section) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight * 0.85) {
-                section.classList.add("visible");
-            }
-        });
-    };
 // Additional JS can go here if needed
-    window.addEventListener("scroll", revealSection);
-    revealSection(); // Check on page load
-});
   
 
