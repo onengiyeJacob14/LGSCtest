@@ -1206,3 +1206,22 @@ body {
 .social-icons a:hover {
   color: var(--color7);
 }
+
+
+
+/* Ensure smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section animations - Fade-in and Slide-in */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
